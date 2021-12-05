@@ -1,0 +1,55 @@
+{
+  "name": "react-ssr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:**",
+    "dev:start": "nodemon build/server.js",
+    "dev:build:server": "webpack --config webpack.server.js --watch",
+    "dev:build:client": "webpack --config webpack.client.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maiziwjp/react-ssr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maiziwjp/react-ssr/issues"
+  },
+  "homepage": "https://github.com/maiziwjp/react-ssr#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "css-loader": "^6.5.1",
+    "express": "^4.17.1",
+    "express-http-proxy": "^1.6.3",
+    "express-session": "^1.17.2",
+    "isomorphic-loader": "^4.5.0",
+    "isomorphic-style-loader": "^5.3.2",
+    "nodemon": "^2.0.15",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router-config": "^5.1.1",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.1.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.4.1",
+    "style-loader": "^3.3.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-proposal-class-properties": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "babel-loader": "^8.2.3",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
